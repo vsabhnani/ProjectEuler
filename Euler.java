@@ -4,6 +4,7 @@ public class Euler {
     public static void main(String[] args) {
         problem1();
         problem2();
+        problem3();
     }
     
     public static void problem1(){ // Find the sum of all the multiples of 3 or 5 below 1000.
@@ -28,5 +29,25 @@ public class Euler {
             f2 = next;
 	}
         System.out.println(sum);  
+    }
+    public static void problem3(){ //What is the largest prime factor of the number 600851475143
+        long num = 600851475143L;
+        while (true){
+            long fac = smallFac(num);
+            if (fac < num)
+                num /= fac;
+            else
+                System.out.println(Long.toString(num));
+        }
+    }
+    
+    public static long smallFac(long num){
+        if (num <= 1)
+            throw new IllegalArgumentException();
+        for (long i = 2, end = Math.sqrt(num); i <= end; i++) {
+            if (num % i == 0)
+                return i;
+        }
+        return num;
     }
 }
