@@ -16,6 +16,9 @@ public class Euler {
         }
         System.out.println(sum);
     }
+    
+    ////////////////////////////////////////////////////////////////
+    
     public static void problem2(){ //By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms. 
         int sum = 0;
 	int f1 = 1;  
@@ -30,6 +33,9 @@ public class Euler {
 	}
         System.out.println(sum);  
     }
+    
+    ////////////////////////////////////////////////////////////////////////////////////
+    
     public static void problem3(){ //What is the largest prime factor of the number 600851475143
         long num = 600851475143L;
         while (true){
@@ -50,4 +56,7 @@ public class Euler {
         }
         return num;
     }
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    
 }
