@@ -1,19 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author vsabhnani
- */
+
 public class Euler {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        problem1();
     }
+    
+    public static void problem1(){ // Find the sum of all the multiples of 3 or 5 below 1000.
+        int sum = 0;
+        for(int i = 0; i < 1000; i ++)
+        {
+            if(i % 3 == 0 || i % 5 == 0)
+                sum += i;
+        }
+        System.out.println(sum);
+    }
+
     
 }
